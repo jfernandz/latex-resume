@@ -1,3 +1,4 @@
 *.bcf
 *.run.xml
 *.synctex.gz
+*.html
