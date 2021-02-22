@@ -23,7 +23,7 @@
 %% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
 % \documentclass[10pt,a4paper,normalphoto]{altacv}
 
-\documentclass[10pt,a4paper,ragged2e,withhyper]{../altacv}
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
 %% AltaCV uses the fontawesome5 and academicons fonts
 %% and packages.
 %% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
@@ -96,7 +96,7 @@
 \name{Javier Fernández Aparicio}
 \tagline{Graduado en física; especializado en computación y electrónica}
 %% You can add multiple photos on the left or right
-\photoR{2.8cm}{profile.jpg}
+%\photoR{2.8cm}{profile.jpg}
 % \photoL{2.5cm}{Yacht_High,Suitcase_High}
 
 \personalinfo{%
@@ -104,7 +104,7 @@
   \email{jfernandz1290@gmail.com}
   \phone{+34 697811058}
   % \mailaddress{Av/ Castillo Puebla de Alcocer, 06006, Badajoz}
-  \location{Badajoz, España}
+  \location{Madrid, España}
   % \homepage{www.homepage.com}
   % \twitter{@twitterhandle}
   \linkedin{jfernandz}
@@ -132,27 +132,46 @@
 \begin{paracol}{2}
 \cvsection{Experiencia}
 
+\cvevent{Ingeniero DevOps}{Joifilabs}{Nov. 2020 -- Act.}{Madrid}
+\begin{itemize}
+\item Desarrollador Python
+\item Sistemas embebidos
+\item IoT
+\item Electrónica
+\end{itemize}
+
+\divider
+
+\cvevent{Atención al cliente}{Marktel}{Oct. 2020 -- Nov. 2020}{Elvas}
+\begin{itemize}
+  \item Operadores móviles virtuales
+\end{itemize}
+
+\divider
+
 \cvevent{Consultoría en prácticas}{Sngular}{Oct. 2019 -- Sept. 2019}{Badajoz}
 \begin{itemize}
 \item Consultoría técnica
 \item Documentación
 \end{itemize}
 
-\divider
+%\divider
+%
+%\cvevent{Prácticas en departamento ingeniería y diseño}{Arborea Intellbird}{Jul. 2014 -- Oct. 2014}{Salamanca}
+%\begin{itemize}
+%\item Apoyo departamento ingeniería
+%\item Redacción informes
+%\end{itemize}
 
-\cvevent{Prácticas en departamento ingeniería y diseño}{Arborea Intellbird}{Jul. 2014 -- Oct. 2014}{Salamanca}
-\begin{itemize}
-\item Apoyo departamento ingeniería
-\item Redacción informes
-\end{itemize}
-
+\medskip
 \cvsection{Proyectos}
-
+\cvevent{Teleindicadores LED frontales y traseros para trenes Civia}{Joifilabs, Actren}{Act.}{}
+\divider
 \cvevent{Aplicación IoT basada en FIWARE para la monitorización de especies arbóreas (TFG)}{UEx}{Jul. 2020}{}
 \divider
-\cvevent{Aplicación SmartLighting; para gestión del alumbrado público (dentro del marco del proyecto INOPAL)}{Sngular}{Oct. 2019}{}
+\cvevent{Aplicación SmartLighting; para gestión del alumbrado público}{Sngular}{Oct. 2019}{}
 \divider
-\cvevent{Aplicación para el análisis de datos del software GammaVision (espectroscopía)}{UEx}{Mar. 2019}{}
+\cvevent{Aplicación para el análisis de datos del software de espectroscopía GammaVision}{UEx}{Mar. 2019}{}
 
 
 % \divider
@@ -175,16 +194,6 @@
 %   2/9em/accent!20/Familia y amigos
 % }
 
-\cvsection{Otra información}
-\begin{itemize}
-  \item Carnet de conducir B
-  \item Vehículo propio
-  \item Disponibilidad inmediata
-\end{itemize}
-
-
-\medskip
-
 % use ONLY \newpage if you want to force a page break for
 % ONLY the current column
 % \newpage
@@ -205,16 +214,16 @@
 
 %% Switch to the right column. This will now automatically move to the second
 %% page if the content is too long.
-\cvsection{Referencias}
-
-% \cvref{name}{email}{mailing address}
-\cvref{Fernando Javier Álvarez Franco}{UEx}{fafranco@unex.es}
-{}
-
-\divider
-
-\cvref{Miguel Ángel Vargas Hurtado}{Sngular}{miguelangel.vargas@sngular.com}
-{}
+%\cvsection{Referencias}
+%
+%% \cvref{name}{email}{mailing address}
+%\cvref{Fernando Javier Álvarez Franco}{UEx}{fafranco@unex.es}
+%{}
+%
+%\divider
+%
+%\cvref{Miguel Ángel Vargas Hurtado}{Sngular}{miguelangel.vargas@sngular.com}
+%{}
 
 \switchcolumn
 
@@ -251,12 +260,13 @@ Hardware:\\[.2cm]
 \cvtag{PastelGreen}{4}{Arduino}
 \cvtag{PastelGreen}{2}{Embedded Systems}
 \cvtag{PastelGreen}{4}{IoT}\\[.2cm]
-\cvtag{PastelGreen}{4}{microcontroladores}
+\cvtag{PastelGreen}{4}{microcontrollers}
+\cvtag{PastelGreen}{4}{RaspberryPi}
 
 \divider
 
 Lenguajes:\\[.2cm]
-\cvtag{PastelGreen}{3}{C}
+\cvtag{PastelGreen}{2}{C}
 \cvtag{PastelGreen}{5}{Python}
 \cvtag{PastelGreen}{1}{C++}
 \cvtag{PastelGreen}{5}{LaTex}
@@ -267,7 +277,6 @@ Lenguajes:\\[.2cm]
 \cvtag{PastelGreen}{2}{JavaScript}\\[.2cm]
 \cvtag{PastelGreen}{4}{R}
 
-
 \divider
 
 Sistemas:\\[.2cm]
@@ -276,6 +285,7 @@ Sistemas:\\[.2cm]
 \cvtag{PastelGreen}{4}{Windows 10}\\[.2cm]
 \cvtag{PastelGreen}{3}{Android}
 \cvtag{PastelGreen}{1}{iOS}
+\cvtag{PastelGreen}{2}{Yocto}
 
 \divider
 
@@ -289,17 +299,16 @@ Herramientas:\\[.2cm]
 \cvtag{PastelGreen}{3}{regex}
 \cvtag{PastelGreen}{5}{markdown}\\[.2cm]
 \cvtag{PastelGreen}{5}{asciidoc}
+\cvtag{PastelGreen}{5}{ssh}
 
-\divider
-
-Tecnologías web:\\[.2cm]
-\cvtag{PastelGreen}{3}{CSS}
-\cvtag{PastelGreen}{3}{HTML}
-\cvtag{PastelGreen}{3}{WordPress}\\[.2cm]
-\cvtag{PastelGreen}{1}{PrestaShop}
-\cvtag{PastelGreen}{2}{Angular}
-
-
+%\divider
+%
+%Tecnologías web:\\[.2cm]
+%\cvtag{PastelGreen}{3}{CSS}
+%\cvtag{PastelGreen}{3}{HTML}
+%\cvtag{PastelGreen}{3}{WordPress}\\[.2cm]
+%\cvtag{PastelGreen}{1}{PrestaShop}
+%\cvtag{PastelGreen}{2}{Angular}
 
 \medskip
 \cvsection{Idiomas}
@@ -322,6 +331,14 @@ Tecnologías web:\\[.2cm]
 \cvevent{Grado en Física}{UEx / USAL}{Julio 2020}{}
 \cvevent{Curso Internet of Things}{FIWARE Space}{Marzo 2019}{}
 
+\medskip
+\cvsection{Otra información}
+\begin{itemize}
+  \item Carnet de conducir B
+  \item Habilidades técnicas
+  %\item Vehículo propio
+  %\item Disponibilidad inmediata
+\end{itemize}
 
 
 % \divider
